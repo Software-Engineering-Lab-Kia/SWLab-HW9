@@ -115,4 +115,91 @@ public class PersonServiceTest {
 				.hasFieldOrPropertyWithValue("errors", expectedErrors)
 				.hasMessage(expectedMessage);
 	}
+
+	@Test
+	public void testUpdate_shouldUpdatePersonWithSuccessWhenPersonIsValid(){
+		Person person = new Person();
+		person.setName("Amir");
+		person.setAge(21);
+		person.setGender(Gender.M);
+		service.insert(person);
+
+		person.setName("Ali");
+		service.update(person);
+	}
+
+	@Test
+	public void testUpdate_shouldThrowPersonExceptionWhenPersonNameIsNull() {
+		List<String> expectedErrors = Lists.newArrayList("Name is required");
+		String expectedMessage = String.join(";", expectedErrors);
+		Person person = new Person();
+		person.setName("Amir");
+		person.setAge(21);
+		person.setGender(Gender.M);
+		service.insert(person);
+
+		person.setName(null);
+
+		assertThatThrownBy(() -> service.update(person))
+				.isInstanceOf(PersonException.class)
+				.hasFieldOrPropertyWithValue("errors", expectedErrors)
+				.hasMessage(expectedMessage);
+	}
+
+
+	@Test
+	public void testDelete_shouldThrowPersonExceptionWhenPersonNameIsEmpty(){
+		List<String> expectedErrors = Lists.newArrayList("Name is required");
+		String expectedMessage = String.join(";", expectedErrors);
+		Person person = new Person();
+		person.setName("");
+		person.setGender(Gender.M);
+
+		assertThatThrownBy(() -> service.delete(person.getName()))
+				.isInstanceOf(PersonException.class)
+				.hasFieldOrPropertyWithValue("errors", expectedErrors)
+				.hasMessage(expectedMessage);
+	}
+
+	@Test
+	public void testDelete_shouldThrowPersonExceptionWhenPersonNameIsNull(){
+		List<String> expectedErrors = Lists.newArrayList("Name is required");
+		String expectedMessage = String.join(";", expectedErrors);
+		Person person = new Person();
+		person.setName(null);
+		person.setGender(Gender.M);
+
+		assertThatThrownBy(() -> service.delete(person.getName()))
+				.isInstanceOf(PersonException.class)
+				.hasFieldOrPropertyWithValue("errors", expectedErrors)
+				.hasMessage(expectedMessage);
+	}
+
+	@Test
+	public void testGet_shouldThrowPersonExceptionWhenPersonNameIsEmpty(){
+		List<String> expectedErrors = Lists.newArrayList("Name is required");
+		String expectedMessage = String.join(";", expectedErrors);
+		Person person = new Person();
+		person.setName("");
+		person.setGender(Gender.M);
+
+		assertThatThrownBy(() -> service.get(person.getName()))
+				.isInstanceOf(PersonException.class)
+				.hasFieldOrPropertyWithValue("errors", expectedErrors)
+				.hasMessage(expectedMessage);
+	}
+
+	@Test
+	public void testGet_shouldThrowPersonExceptionWhenPersonNameIsNull(){
+		List<String> expectedErrors = Lists.newArrayList("Name is required");
+		String expectedMessage = String.join(";", expectedErrors);
+		Person person = new Person();
+		person.setName(null);
+		person.setGender(Gender.M);
+
+		assertThatThrownBy(() -> service.get(person.getName()))
+				.isInstanceOf(PersonException.class)
+				.hasFieldOrPropertyWithValue("errors", expectedErrors)
+				.hasMessage(expectedMessage);
+	}
 }
