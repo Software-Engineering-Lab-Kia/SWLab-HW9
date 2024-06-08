@@ -24,7 +24,15 @@
 
 مشاهده می‌شود که در تعدادی از کلاس‌ها، بخشی از متدها توسط تست پوشش داده نشده‌اند. در بخش بعدی سعی می‌شود تا بخشی از آنها پوشش داده شوند.
 
+همان طور که در اسکرین‌شات قبلی واضح است، کلاسِ PersonRepository دارای coverage صفر است و تست‌های اولیه هیچ بخشی از کد را پوشش نمی‌دهند. فلذا تست‌های مربوط به کلاسِ PersonRepositoryTest را توسعه و گسترش می‌دهیم تا coverage افزایش یابد. کلاس تست مربوطه را می‌بینید:
 
+![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-03-43.jpg?raw=true)
+
+![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-03-59.jpg?raw=true)
+
+همان‌طور که می‌بینید تست نهایی به coverage صد درصد می‌رسد، هم از نظر پوشش کلاس، هم پوشش متدها و هم خطوط کد:
+
+![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-04-06.jpg?raw=true)
 
 
 # unittest.with.codecoverage
