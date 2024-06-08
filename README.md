@@ -14,6 +14,15 @@
 
 <img width="1512" alt="image" src="https://github.com/kiarashk8128/SWLab-HW9/assets/62250863/0db24be7-b9b6-499f-8627-942514efe47a">
 
+## تمرین
+
+### بخش ۱
+
+قبل از ایجاد تغییرات، میزان coverage به صورت زیر است:
+
+<img width="1512" alt="image" src="https://github.com/kiarashk8128/SWLab-HW9/assets/62250863/75137025-574a-4a4c-87ad-537d8d04f136">
+
+مشاهده می‌شود که در تعدادی از کلاس‌ها، بخشی از متدها توسط تست پوشش داده نشده‌اند. در بخش بعدی سعی می‌شود تا بخشی از آنها پوشش داده شوند.
 
 
 
