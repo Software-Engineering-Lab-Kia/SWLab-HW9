@@ -16,8 +16,6 @@
 
 ## تمرین
 
-### بخش ۱
-
 قبل از ایجاد تغییرات، میزان coverage به صورت زیر است:
 
 <img width="1512" alt="image" src="https://github.com/kiarashk8128/SWLab-HW9/assets/62250863/75137025-574a-4a4c-87ad-537d8d04f136">
@@ -34,20 +32,13 @@
 
 ![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-04-06.jpg?raw=true)
 
+در ادامه می‌خواهیم coverage کلاس‌های پکیجِ services را ببرسی کرده و افزایش دهیم. برای این کار متدهای تست کلاسِ PersonServiceTest را پیاده‌سازی می‌کنیم. اسکرین‌شات‌های زیر نمایشگر تست‌های پیاده‌سازی شده هستند:
 
-# unittest.with.codecoverage
-### _Demo of unit test with code coverage_
 
-## Content
-- Unit test exemples with jUnit5 and Mockito
-- JaCoCo for code coverage report
-- Dificult: Beginner
+![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-58-02.jpg?raw=true)
 
-## Executions
-- mvn clean install -DskipTests
-- mvn jacoco:report
-- mvn test
+![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-58-09.jpg?raw=true)
 
-### JaCoCo report report can be found at _target/site/jacoco/index.html_
+![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-58-17.jpg?raw=true)
 
-Slides with content of the topic (pt-BR):<br> https://docs.google.com/presentation/d/1Dkz-qUYigPFynfNk8KcAeyTIxhUmaVTZ4DM6d5UjcJE/edit?usp=sharing
+![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-58-23.jpg?raw=true)
