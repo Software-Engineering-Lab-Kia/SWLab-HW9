@@ -34,11 +34,13 @@
 
 در ادامه می‌خواهیم coverage کلاس‌های پکیجِ services را ببرسی کرده و افزایش دهیم. برای این کار متدهای تست کلاسِ PersonServiceTest را پیاده‌سازی می‌کنیم. اسکرین‌شات‌های زیر نمایشگر تست‌های پیاده‌سازی شده هستند:
 
-
 ![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-58-02.jpg?raw=true)
 
 ![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-58-09.jpg?raw=true)
 
 ![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-58-17.jpg?raw=true)
 
+این تست‌ها متدهایی مانند ایجاد یک Person، همچنین دریافت اطلاعات او و delete کردن و فانکشنالیتی‌هایی از این قبیل را تست می‌کنند.
+
+در نهایت coverage کلاس‌های این پکیج به 100 درصد می‌رسد و تمامی متدها و خطوط کد پوشش داده می‌شوند. در اسکرین‌شات زیر coverage کلاس‌ها را می‌توانید ببینید:
 ![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-58-23.jpg?raw=true)
