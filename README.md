@@ -28,6 +28,11 @@
 
 ![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-03-43.jpg?raw=true)
 
+![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-03-59.jpg?raw=true)
+
+همان‌طور که می‌بینید تست نهایی به coverage صد درصد می‌رسد، هم از نظر پوشش کلاس، هم پوشش متدها و هم خطوط کد:
+
+![](https://github.com/kiarashk8128/SWLab-HW9/blob/main/images/photo_2024-06-08_11-04-06.jpg?raw=true)
 
 
 # unittest.with.codecoverage
